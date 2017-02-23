@@ -7,12 +7,14 @@ import com.amazonaws.services.s3.model.PutObjectResult;
 import com.amazonaws.services.s3.model.S3Object;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
 import java.util.Collections;
 import java.util.Map;
 import java.util.UUID;
 
+@Service
 public class AmazonS3Service {
 
     private static final String FILE_FORMAT_TEMPLATE = "%s.%s";
